@@ -1,0 +1,10 @@
+const express = require('express');
+const router=express.Router();
+const controllers=require('./controllers');
+router.route('/signup').post(controllers.signUp);
+router.route('/login').post(controllers.userLogin);
+router.route('/alldataget').post(controllers.allDataget);
+router.route('/alldatainsert').post(controllers.allDataInsert);
+router.route('/deletedata').post(controllers.deleteData);
+router.route('/updatedata').post(controllers.updateData);
+module.exports =router;
