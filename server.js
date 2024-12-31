@@ -4,7 +4,10 @@ const router=require('./router');
 app.use(express.json());
 const cors = require('cors');
 const corsOptions = {
-    origin: 'https://mohit-to-do-frontent-backend.netlify.app https://mohitnsut-todo.netlify.app',
+    origin: [
+    'https://mohit-to-do-frontent-backend.netlify.app',
+    'https://mohitnsut-todo.netlify.app',
+  ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   };
